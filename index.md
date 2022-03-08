@@ -34,7 +34,8 @@ This business questions is answered analysing the store dataset with pandas and 
    I augment my data column with the table,i converted it to a the right data type using the ***.astype()***  function
    
    I added the city column with the following line of code
-   
+
+
 `def get_city(address):
     return address.split(",")[1]
 def get_state(address):
@@ -61,6 +62,8 @@ According to my analysis i found out that month of december has the highest numb
  # Step 5. What Us City has the highest number of sales.How much was earned?
 Using  data visualization library *matplotlib* i  found out that San francisco as the highest number of sales
 Using the sum function i found out how much was earned
+
+   ![Screenshot (80)](https://user-images.githubusercontent.com/83674765/157142229-89c237d5-fa0e-4934-88b2-9e43aba32321.png)
 
 #Step 6:
  3. What time should we place advertisement to increase the  likelihood of buying?
