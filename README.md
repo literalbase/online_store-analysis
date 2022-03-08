@@ -8,7 +8,17 @@ Analysing dataset from an online store to answer bussiness questions:
 4. What are some product that are always sold together?
 5. What product is sold the most and why do you think is sold?
 
-This business questions is answered analysing the store dataset with pandas and matplotlib for the data visualization
+This business questions is answered analysing the store dataset with pandas and matplotlib for the data visualization-
+
+---
+# Skills to watch :
+1. Data cleaning
+2. Data analysis
+3. Data visualization
+4. Paying attention to details
+5. Problem solving skills
+
+
 
 # Step 1 :
 
@@ -51,4 +61,41 @@ According to my analysis i found out that month of december has the highest numb
  # Step 5. What Us City has the highest number of sales.How much was earned?
 Using  data visualization library *matplotlib* i  found out that San francisco as the highest number of sales
 Using the sum function i found out how much was earned
- 
+
+#Step 6:
+ 3. What time should we place advertisement to increase the  likelihood of buying?
+      I converted the Order date column to a timestamp using the ***to_datetime()*** function
+      
+      ##  I made sure i paid attention to detail by breaking down the time to hours and minute simply using the following lines of code
+      
+      `all_data['Hour'] = all_data['Order Date'].dt.hour
+all_data['Minute'] = all_data['Order Date'].dt.minute
+all_data['Count'] = 1`
+
+# Step 7
+4. What are some product that are always sold together?
+I used the *.groupby()* function to and i handle the duplicate data since i am getting the data in pairs
+
+`df = all_data[all_data['Order ID'].duplicated(keep = False)]
+df['Grouped'] = df.groupby('Order ID')['Product'].transform(lambda x: ','.join(x))
+df = df[['Order ID','Grouped']].drop_duplicates()
+df.head()`
+
+      
+# Step 8:
+5. What product is sold the most and why do you think is sold?
+
+I was able to analyse the Quantity ordered column with respect to the price to determine  why a product is been sold more than ones
+
+` product_group = all_data.groupby('Product')
+quantity_ordered = product_group.sum()['Quantity Ordered']
+
+= [product for product  ,  df in product_group]
+plt.bar(products,quantity_ordered)
+plt.ylabel('Quantity Ordered')
+plt.xlabel('Product')
+plt.xticks(products, rotation ='vertical',size = 8)
+plt.show()`
+I tactfully used the *groupby()* function to achieve my aim
+
+
