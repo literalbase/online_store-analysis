@@ -88,6 +88,9 @@ df.head()`
 # Step 8:
 5. What product is sold the most and why do you think is sold?
 
+
+![Screenshot (81)](https://user-images.githubusercontent.com/83674765/157143030-12c4d9d2-163c-4241-8ee5-4399d676bad3.png)
+
 I was able to analyse the Quantity ordered column with respect to the price to determine  why a product is been sold more than ones
 
 ` product_group = all_data.groupby('Product')
