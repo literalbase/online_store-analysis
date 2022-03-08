@@ -9,7 +9,8 @@ Analysing dataset from an online store to answer bussiness questions:
 5. What product is sold the most and why do you think is sold?
 
 This business questions is answered analysing the store dataset with pandas and matplotlib for the data visualization-
-![pexels-anna-nekrashevich-6801871](https://user-images.githubusercontent.com/83674765/157143454-c5235d6d-9c6d-433b-8583-2bae806b1990.jpg)
+![pexels-tima-miroshnichenko-7567440](https://user-images.githubusercontent.com/83674765/157143687-ba883ab8-7cfd-44ba-9a59-f6645d79e78c.jpg)
+
 
 ---
 # Skills to watch :
