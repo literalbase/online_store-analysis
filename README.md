@@ -89,13 +89,13 @@ I was able to analyse the Quantity ordered column with respect to the price to d
 
 ` product_group = all_data.groupby('Product')
 quantity_ordered = product_group.sum()['Quantity Ordered']
-
 = [product for product  ,  df in product_group]
 plt.bar(products,quantity_ordered)
 plt.ylabel('Quantity Ordered')
 plt.xlabel('Product')
 plt.xticks(products, rotation ='vertical',size = 8)
 plt.show()`
-I tactfully used the *groupby()* function to achieve my aim
 
+I tactfully used the *groupby()* function to achieve my aim.
+##Thanks for your time.
 
